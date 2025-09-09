@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSlots - Futuristic Gaming Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div id="ageModal" class="modal">
+        <div class="modal-content age-verification">
+            <div class="cyber-border">
+                <h2><i class="fas fa-shield-alt"></i> Age Verification Required</h2>
+                <p>You must be 18 or older to access this site.</p>
+                <p>By continuing, you confirm that you are of legal age to view this content.</p>
+                <div class="age-buttons">
+                    <button id="ageConfirm" class="btn btn-primary">I am 18 or older</button>
+                    <button id="ageDecline" class="btn btn-secondary">I am under 18</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content game-modal">
+            <span class="close" id="closeGame">&times;</span>
+            <div id="gameContainer">
+                <iframe id="gameFrame" src="" width="100%" height="100%" frameborder="0" 
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1><i class="fas fa-cube"></i> CyberFun</h1>
+                    <span class="tagline">Future Gaming Experience</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#games">Games</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Welcome to CyberFun">Welcome to CyberFun</h1>
+            <p>Experience the future of online gaming with our cutting-edge slot collection</p>
+            <a href="#games" class="btn btn-primary btn-glow">
+                <i class="fas fa-play"></i> Start Playing
+            </a>
+        </div>
+        <div class="hero-bg">
+            <div class="cyber-grid"></div>
+            <div class="floating-elements">
+                <div class="float-cube"></div>
+                <div class="float-cube"></div>
+                <div class="float-cube"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About CyberFun</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Step into the future of entertainment with CyberFun, where cutting-edge technology meets classic gaming excitement. Our platform offers a unique collection of themed slot games designed purely for entertainment purposes.</p>
+                    <p>Experience immersive gameplay with stunning cyberpunk aesthetics, all while enjoying our games responsibly and safely.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Safe & Secure</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Optimized</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Entertainment Only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Game Collection</h2>
+            <div class="games-grid">
+                <div class="game-card" data-game="https://free-slots.games/game/CrystalBallRedHotFirepotGM/">
+                    <div class="game-image">
+                        <div class="game-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Crystal Ball Red Hot Firepot</h3>
+                        <p>Experience the heat with this fiery slot adventure</p>
+                        <div class="game-stats">
+                            <span><i class="fas fa-star"></i> Premium</span>
+                            <span><i class="fas fa-bolt"></i> High Energy</span>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="https://free-slots.games/game/CrystalBallGM/">
+                    <div class="game-image">
+                        <div class="game-icon">
+                            <i class="fas fa-crystal-ball"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Crystal Ball</h3>
+                        <p>Peer into the future with mystical slot magic</p>
+                        <div class="game-stats">
+                            <span><i class="fas fa-magic"></i> Mystical</span>
+                            <span><i class="fas fa-gem"></i> Classic</span>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="https://free-slots.games/game/BookOfRomeoAndJuliaGM/">
+                    <div class="game-image">
+                        <div class="game-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Book of Romeo & Julia</h3>
+                        <p>A romantic tale meets thrilling slot action</p>
+                        <div class="game-stats">
+                            <span><i class="fas fa-heart"></i> Romance</span>
+                            <span><i class="fas fa-scroll"></i> Story-driven</span>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="https://free-slots.games/game/BookOfMoorhuhnGoldenNightsGM/">
+                    <div class="game-image">
+                        <div class="game-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Book of Crazy Chicken: Golden Nights</h3>
+                        <p>Embark on golden adventures in this bonus-filled slot</p>
+                        <div class="game-stats">
+                            <span><i class="fas fa-coins"></i> Bonus Rich</span>
+                            <span><i class="fas fa-trophy"></i> Adventure</span>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="https://free-slots.games/game/BeautifulNatureGM/?m=1en0001">
+                    <div class="game-image">
+                        <div class="game-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Beautiful Nature</h3>
+                        <p>Connect with nature in this serene slot experience</p>
+                        <div class="game-stats">
+                            <span><i class="fas fa-tree"></i> Nature</span>
+                            <span><i class="fas fa-peace"></i> Relaxing</span>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="https://free-slots.games/game/AncientMagicGM/">
+                    <div class="game-image">
+                        <div class="game-icon">
+                            <i class="fas fa-hat-wizard"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Ancient Magic</h3>
+                        <p>Unlock the mysteries of ancient magical powers</p>
+                        <div class="game-stats">
+                            <span><i class="fas fa-magic"></i> Mystical</span>
+                            <span><i class="fas fa-history"></i> Ancient</span>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose CyberFun?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Your safety is our priority with advanced security measures</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Ready</h3>
+                    <p>Play anywhere, anytime with our responsive design</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Entertainment Focus</h3>
+                    <p>Designed purely for fun and entertainment purposes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Available</h3>
+                    <p>Access our games whenever you want, day or night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-cube"></i> CyberFun</h3>
+                    <p>The future of entertainment gaming is here. Experience cutting-edge slots with stunning cyberpunk aesthetics.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p><strong>Entertainment Only:</strong> All games on this site are provided for entertainment purposes only. No real money gambling occurs on this platform.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Responsible Gaming (UK)</h4>
+                    <p>We promote responsible gaming. If you feel you may have a gambling problem, please visit <a href="https://www.begambleaware.org" target="_blank">BeGambleAware.org</a> for help and support.</p>
+                    <p>This site is for users 18+ only.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberFun. All rights reserved. | Games are for entertainment purposes only.</p>
+                <div class="responsible-gaming">
+                    <img src="https://www.begambleaware.org/sites/default/files/bga_logo_rgb_white_250.png" alt="BeGambleAware" style="height: 30px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
